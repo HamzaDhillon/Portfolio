@@ -1,0 +1,283 @@
+<!-- 
+#####################################################################
+    Author: Hamza Tariq
+    Date: Dec 6, 2024
+    Purpose: CIS-1280 2024 Portfolio Project - index.html
+    Description: This file contains the home page of my portfolio with an overview of other pages 
+    Dependencies: 
+        - Bootstrap 5.3.2 (for responsive design and styling)
+        - Font Awesome 6.5.0 (for icons)
+        - Google Fonts (Poppins and Lora fonts)
+        - Custom CSS (css/custom.css for additional styling)
+#####################################################################
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Hamza, aspiring web developer showcasing projects, skills, and aspirations.">
+  <meta name="keywords" content="portfolio, web developer, student, projects, CIS, skills, HTML, CSS, JavaScript">
+  <meta name="author" content="Hamza">
+  <title>Home</title> <!-- This is the title -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lora:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="home-page">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <!-- Profile Image (Small Circle) -->
+        <img src="img/pic.jpeg" alt="Hamza's Photo" class="rounded-circle"
+          style="width: 30px; height: 30px; margin-right: 10px;">
+        Hamza's Portfolio
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Projects">
+              <i class="fas fa-briefcase"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experience.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Experience">
+              <i class="fas fa-cogs"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Skills">
+              <i class="fas fa-laptop-code"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="activities.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Activities">
+              <i class="fas fa-running"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactMe.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Contact">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1>Hamza Tariq</h1>
+      <p>Web Developer passionate about creating innovative, responsive, and user-friendly digital solutions.</p>
+      <a href="projects.html" class="btn btn">See My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-section py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="text-success fw-bold">About Me</h2>
+      <p>
+        I’m <strong>Hamza Tariq</strong>, a web developer passionate about creating user-friendly digital experiences.
+        I am pursuing a <strong>Computer Information Systems Diploma</strong> at Holland College and hold a Bachelor’s
+        in Computer Science.
+        My hands-on projects, like building a Travel Agency Management System and Clothing Store System using C# and
+        SQL, showcase my ability to solve real-world problems efficiently.
+      </p>
+      <p>
+        With a strong foundation in programming, I excel in object-oriented design and database management, always
+        striving to deliver innovative solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Carousel Section with Heading -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4 text-success fw-bold">My Projects</h2> <!-- Added heading for the section -->
+
+    <!-- Carousel Wrapper -->
+    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <!-- First Slide (contains your first batch of cards) -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <!-- Project Card 1 -->
+              <div class="col-md-4 mb-4">
+                <div class="card custom-card">
+                  <img src="img/projects/brightTechITSolutions.png" class="card-img-top" alt="BrightTech Solutions">
+                  <div class="card-body">
+                    <h5 class="card-title">BrightTech Solutions</h5>
+                    <p class="card-text">A modern IT solutions website built for BrightTech Solutions, showcasing
+                      services and projects.</p>
+                    <div class="tags">
+                      <span class="badge bg-primary">HTML</span>
+                      <span class="badge bg-secondary">CSS</span>
+                      <span class="badge bg-danger">PHP</span>
+                    </div>
+                    <!-- Centering the Details Button -->
+                    <div class="d-flex justify-content-center mt-3">
+                      <a href="projects.html" class="btn btn-custom">Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Card 2 -->
+              <div class="col-md-4 mb-4">
+                <div class="card custom-card">
+                  <img src="img/projects/studentManagementSystem.png" class="card-img-top"
+                    alt="Student Management System">
+                  <div class="card-body">
+                    <h5 class="card-title">Student Management System</h5>
+                    <p class="card-text">A simple student management system with the implementation of MySQL database in
+                      C# project in Windows forms.</p>
+                    <div class="tags">
+                      <span class="badge bg-primary">MYSQL</span>
+                      <span class="badge bg-secondary">Winforms</span>
+                      <span class="badge bg-warning">.NET</span>
+                      <span class="badge bg-success">C#</span>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <a href="projects.html" class="btn btn-custom">Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Card 3 -->
+              <div class="col-md-4 mb-4">
+                <div class="card custom-card">
+                  <img src="img/projects/ghostGame.png" class="card-img-top" alt="2D Ghost Game">
+                  <div class="card-body">
+                    <h5 class="card-title">2D Ghost Game</h5>
+                    <p class="card-text">A simple 2D ghost game with multiple objects of OOP in C# project in Windows
+                      forms.</p>
+                    <div class="tags">
+                      <span class="badge bg-secondary">Winforms</span>
+                      <span class="badge bg-warning">.NET</span>
+                      <span class="badge bg-success">C#</span>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <a href="projects.html" class="btn btn-custom">Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Slide (contains your second batch of cards) -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <!-- Project Card 4 -->
+              <div class="col-md-4 mb-4">
+                <div class="card custom-card">
+                  <img src="img/projects/ludo.png" class="card-img-top" alt="Ludo Game">
+                  <div class="card-body">
+                    <h5 class="card-title">2D Ludo Game</h5>
+                    <p class="card-text">A simple Ludo game using basic concepts of C++.</p>
+                    <div class="tags">
+                      <span class="badge bg-secondary">C++</span>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <a href="projects.html" class="btn btn-custom">Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Card 5 -->
+              <div class="col-md-4 mb-4">
+                <div class="card custom-card">
+                  <img src="img/projects/restaurantManagementSystems.png" class="card-img-top" alt="POS Application">
+                  <div class="card-body">
+                    <h5 class="card-title">Restaurant Management System</h5>
+                    <p class="card-text">A very basic restaurant management system using basic concepts of C++.</p>
+                    <div class="tags">
+                      <span class="badge bg-success">C++</span>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                      <a href="projects.html" class="btn btn-custom">Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section py-5">
+    <div class="container text-center">
+      <h2 class="text-success fw-bold">Get in Touch</h2>
+      <p>Connect with me on the following platforms:</p>
+      <div class="d-flex justify-content-center gap-4 mt-4">
+        <!-- GitHub -->
+        <a href="https://github.com/HamzaDhillon" target="_blank" class="text-decoration-none text-dark">
+          <i class="fab fa-github fa-2x"></i>
+          <p class="mt-2">GitHub</p>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/hamza-tariq-718965258/" target="_blank"
+          class="text-decoration-none text-primary">
+          <i class="fab fa-linkedin fa-2x"></i>
+          <p class="mt-2">LinkedIn</p>
+        </a>
+        <!-- Email -->
+        <a href="mailto:htariq@hollandcollege.com" class="text-decoration-none text-danger">
+          <i class="fas fa-envelope fa-2x"></i>
+          <p class="mt-2">Email</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Hamza. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/tooltips.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

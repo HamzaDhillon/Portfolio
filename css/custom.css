@@ -1,0 +1,312 @@
+/*
+#####################################################################
+    Author: Hamza Tariq
+    Date: Dec 6, 2024
+    Purpose: CIS-1280 2024 Portfolio Project - custom.css
+    Description: This file has some styling which overrides the default bootstrap styling in some cases.
+    Dependencies: None
+#####################################################################
+*/
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Navbar Styling */
+.navbar {
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-bottom: 2px solid #ddd;
+    /* Light gray line */
+}
+
+.nav-link {
+    margin: 0 15px;
+    font-weight: 500;
+    color: #343a40;
+}
+
+.nav-link:hover {
+    color: mediumseagreen;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #cfdad499;
+    /* Medium sea green tint */
+    padding: 50px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-section .lead {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #6c757d;
+}
+
+.hero-section .btn {
+    border-radius: 40px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-color: mediumseagreen;
+    color: #fff;
+}
+
+.hero-section .btn:hover {
+    background-color: #2e8b57;
+}
+
+/* About Section */
+.about-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: mediumseagreen;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #6c757d;
+}
+
+/* General Layout */
+#projects {
+    background-color: #f7f7f7;
+    /* Light background for contrast */
+}
+
+#projects .container {
+    max-width: 1200px;
+}
+
+/* Project Card Styles */
+.custom-card {
+    border-radius: 12px;
+    /* Slightly rounded corners */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effects */
+    overflow: hidden;
+    height: 460px;
+    /* Set a fixed height for the card */
+    display: flex;
+    flex-direction: column;
+    /* Align contents vertically */
+}
+
+.custom-card:hover {
+    transform: translateY(-8px);
+    /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow on hover */
+}
+
+/* Image Style */
+.custom-card .card-img-top {
+    height: 230px;
+    /* Fixed image height */
+    object-fit: fill;
+    /* Ensure the image covers the area */
+    border-bottom: 5px solid #28a745;
+    /* Green border below the image */
+}
+
+/* Padding between image and text */
+.custom-card .card-body {
+    padding: 20px;
+    /* Padding inside the card body */
+    flex-grow: 1;
+    /* Allow the body to take the remaining space */
+}
+
+/* Button Styles */
+.btn-custom {
+    background-color: #28a745;
+    /* Custom green for buttons */
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    /* Rounded button edges */
+    padding: 5px 10px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+    transform: translateY(-3px);
+    /* Button slightly lifts on hover */
+    text-decoration: none;
+}
+
+/* Cards behaviour in home page */
+.home-page .custom-card {
+    height: 400px;
+}
+
+/* Hide details button on this page */
+.home-page .btn-custom {
+    display: none;
+    /* Hide button */
+}
+
+/* Work Experience Grid Styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.grid-item {
+    text-align: left;
+}
+
+.grid-item h3 {
+    color: mediumseagreen;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.grid-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.grid-item ul {
+    margin: 0.5rem 0 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.grid-item ul li {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Skill Card Styles */
+.skill-card {
+    border: none;
+    border-radius: 10px 10px 20px 20px;
+    /* Apply a higher radius to bottom corners */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    /* Fixed height for consistent sizing */
+    overflow: hidden;
+    /* Prevent content overflow affecting the rounded corners */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card Image */
+.skill-card .card-img-top {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+/* Card Body */
+.skill-card .card-body {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Card Title */
+.skill-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Card Text */
+.skill-card .card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Hover Effect */
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Card Background on Hover */
+.skill-card:hover .card-body {
+    background-color: #f7f7f7;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+    .skill-card .card-img-top {
+        height: 150px;
+    }
+}
+
+/* Activities grid */
+.activity-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.activity-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Typography */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* Sticky Footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px 0;
+    margin-top: auto;
+}
